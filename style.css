@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+
+/* Header Works Star Here */
+
+header {
+    width: 100%;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+    color: #fff;
+}
+
+.left-logo {
+    width: 17%;
+    position: relative;
+    left: 15px;
+}
+
+.right-logo {
+    width: 5%;
+    position: relative;
+    right: 5px;
+}
+
+.tcs-left {
+    width: 195px;
+}
+
+.tcs-right {
+    width: 65px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-link {
+    width: 50%;
+}
+
+.extra-link {
+    width: 24%;
+    color: #9b9b9b;
+}
+
+a {
+    text-decoration: none;
+}
+
+.search {
+    width: 4%;
+}
+
+.search-icon {
+    height: 25px;
+}
+
+li, .tcs-left, .tcs-right, .search-icon {
+    cursor: pointer;
+}
+
+.extra-link > ul > li > a:visited {
+    color: #9b9b9b;
+}
+
+.extra-link > ul > li > a:hover {
+    color: #007bff;
+}
+
+
+
+
+
+
+
+/* Slider Work Start Here */
+
+.slider-container {
+    height: 700px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: 450px;
+}
+
+.detail-3 {
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    top: -100px;
+}
+
+.slider-3 {
+    width: 80%;
+    background-image: url('./images/AdobeStock_640561105.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+    position: relative;
+    top: -10px;
+}
+
+.wrapper {
+    height: 450px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.pause-symbol, .left-symbol, .right-symbol {
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+
+
+.left-symbol, .right-symbol {
+    width: 14px;
+}
+
+.pause-symbol {
+    height: 18px;
+    bottom: 80px;
+}
+
+.left-symbol {
+    bottom: 40px;
+}
+
+.right-symbol {
+    bottom: 5px;
+}
