@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -97,29 +98,88 @@ li, .tcs-left, .tcs-right, .search-icon {
     width: 100%;
     background-color: #000;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .slider {
-    height: 450px;
+    height: 480px;
 }
 
 .detail-3 {
     font-size: 5rem;
     color: #fff;
     position: absolute;
-    top: -100px;
+    top: -80px;
+}
+
+.slider-2 {
+    width: 70%;
+    overflow: hidden;
+    height: 480px;
+    left: -80%;
+    background-image: url('./images/updated-ar-home-page-banner-for-mobile.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 100px;
 }
 
 .slider-3 {
-    width: 80%;
+    width: 70%;
     background-image: url('./images/AdobeStock_640561105.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -100px;
     position: relative;
-    top: -10px;
+    top: -380px;
+}
+
+.slider-4 {
+    width: 70%;
+    overflow: hidden;
+    height: 480px;
+    left: 80%;
+    background-image: url('./images/tcs-launches-wisdomnext-an-industry-first-genai-aggregation-platform-web.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    top: -850px;
+}
+
+
+
+.top-title {
+    z-index: 5;
+    position: relative;
+}
+
+.slider-1::before, .slider-2::before, .slider-3::before, .slider-4::before {
+    content: "";
+    position: absolute;
+    top: 100;
+    right:0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    height: 480px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+}
+
+.slider-3:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    height: 480px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.5));
 }
 
 .wrapper {
@@ -130,8 +190,8 @@ li, .tcs-left, .tcs-right, .search-icon {
 
 .controls {
     position: absolute;
-    bottom: 0;
-    right: 50px;
+    bottom: 70px;
+    right: 130px;
 }
 
 .pause-symbol, .left-symbol, .right-symbol {
@@ -156,4 +216,28 @@ li, .tcs-left, .tcs-right, .search-icon {
 
 .right-symbol {
     bottom: 5px;
+}
+
+.desc {
+    font-size: 28px;
+    display: none;
+}
+
+.slider-3:hover > .detail-3 > .desc {
+    display: block;
+    position: relative;
+    z-index: 5;
+}
+
+.blue-btn {
+    font-size: 18px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+    font-weight: bold;
+    width: 170px;
+    background-color: #007bff;
+    border-radius: 50px;
 }
